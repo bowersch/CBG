@@ -1,0 +1,64 @@
+<!-- A lot of reference to the book: HTML & CSS by Jon Duckett -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Chelsea Bowers Gallery</title>
+        <link href="style.css" type= text/css rel="stylesheet" />
+        <div class="title">
+            <img src="pic3.jpg" alt="sunrise" title="Sunrise on Haleakala" />
+            <h1>CHELSEA BOWERS GALLERY</h1>
+        </div>
+    </head>
+    <body>
+        <div id="menu">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="art.html">ART</a></li>
+                <li><a href="photography.html">PHOTOGRAPHY</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="float-container"> <!-- displaying divs side by side equally. Source: https://coder-coder.com/display-divs-side-by-side/ -->
+            <div class="homeContent">
+                <div class="slide_container">
+                    <div class="slide">
+                        <img src=carousel/caro1.jpg>
+                    </div>
+                    <div class="slide">
+                        <img src=carousel/caro2.jpg>
+                    </div>
+                    <div class="slide">
+                        <img src=carousel/caro3.JPG>
+                    </div>
+                    <div class="slide">
+                        <img src=carousel/caro4.jpg>
+                    </div>
+                </div>
+                <!-- I'm taking the arrow icons from here. I like them more than the "previous" and "next" buttons I was using https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
+                <a class="previous" onclick="previousImg()">&#10094;</a> 
+                <a class="next" onclick="nextImg()">&#10095;</a>
+                <script src="dynamic.js"></script>
+            </div>
+            <div class="homeContent">
+                <p>
+                    <h1>Welcome</h1>
+                    I'm very excited to share my art with you. I've been wanting to do this (create an online gallery of my own) for a long time and now, it is finally coming together. 
+                    <br /> 
+                    <br />
+                    Thank you so much for visiting! I hope you enjoy!
+                    <br />
+                    <img src="photography/newport.jpg" title="A Day in Newport" id="align_right" />
+                    <br />
+                    <br />
+                    Picture of the Month: <i>A Day in Newport</i> available for
+                    <a href="photography/newport.jpg" download>download</a>!  
+                </p>
+            </div>
+        </div>
+        <p id="picassoq">
+            <q><i>Art washes away from the soul the dust of every day life.</i></q>-Pablo Picasso
+        </p>
+    </body>
+</html>
